@@ -4,6 +4,7 @@
 //typedef struct _person person_t;
 typedef struct {
     char name[20];
+    int bb;
 } person;
 
 //struct _person p;
@@ -16,7 +17,9 @@ int main(void)
 
   //構造帯の練習
   person p = {'a','b'};
+  p.bb = 333;
   printf("%s\n",p.name);
+  printf("%d\n",p.bb);
   // ポインタの練習
 
   int *b = &a;
